@@ -21,6 +21,7 @@ public class CoursController {
         return coursService.getAllCours(id);
     }
     @RequestMapping("/modules/{moduleId}/cours/{id}")
+
     public Optional<Cours> getCour(@PathVariable Integer id){
         return coursService.getCours(id);
     }

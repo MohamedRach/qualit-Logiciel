@@ -17,6 +17,8 @@ public class Cours {
     private int id;
     private String nom;
     private String description;
+    //add variable
+    private String zoubeir;
 
     @ManyToOne
     private Module module;
