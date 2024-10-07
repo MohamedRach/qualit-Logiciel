@@ -41,5 +41,10 @@ public class CoursController {
         coursService.supprimerCours(id);
     }
 
+    @RequestMapping(method=RequestMethod.DELETE, value="/modules/{moduleId}/cours/{id}")
+    public void supprimerCour(@PathVariable Integer id) {
+        coursService.supprimerCours(id);
+    }
+
 
 }
