@@ -10,7 +10,6 @@ import java.util.Optional;
 
 @RestController
 public class CoursController {
-
     private CoursService coursService;
 
     public CoursController(CoursService coursService) {
@@ -22,7 +21,8 @@ public class CoursController {
         return coursService.getAllCours(id);
     }
     @RequestMapping("/modules/{moduleId}/cours/{id}")
-    public Optional<Cours> getCourss(@PathVariable Integer id){
+
+    public Optional<Cours> getCour(@PathVariable Integer id){
         return coursService.getCours(id);
     }
     @RequestMapping(method=RequestMethod.POST, value="/modules/{moduleId}/cours")
