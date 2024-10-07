@@ -22,7 +22,7 @@ public class CoursController {
         return coursService.getAllCours(id);
     }
     @RequestMapping("/modules/{moduleId}/cours/{id}")
-    public Optional<Cours> getCours(@PathVariable Integer id){
+    public Optional<Cours> getCourss(@PathVariable Integer id){
         return coursService.getCours(id);
     }
     @RequestMapping(method=RequestMethod.POST, value="/modules/{moduleId}/cours")
